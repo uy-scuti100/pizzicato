@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="container relative overflow-hidden">
+        <div>
+            <img src="images/bg.png" alt="/" class="absolute z-10 top-0 h-full right-[30%]">
+        </div>
+
+        <div class="flex justify-between items-center mt-5  p-4 mx-auto ">
+            <ul class="flex hidden md:flex space-x-5 text-[17px] text-[#494234] font-bold">
+                <li><a href="#" class="links relative px-3 py-1 z-10">Home</a></li>
+                <li><a href="#" class="links relative px-3 py-1 z-10"> Product</a></li>
+                <li><a href="#" class="links relative px-3 py-1 z-10">Services</a></li>
+                <li><a href="#" class="links relative px-3 py-1 z-10">About</a></li>
+                <li><a href="#" class="links relative px-3 py-1 z-10">FAQ</a></li>
+            </ul>
+            <div class="z-10 md:hidden"><img src="images/IMG_3297.PNG" alt="/" width="100px"></div>
+            <div class="z-10 hidden md:block"><img src="images/IMG_3297.PNG" alt="/" width="150px"></div>
+        </div>
+        <!-- mobile navbar starts from here-->
+        <div class="md:hidden flex">
+            <ul
+                class="flex items-center w-full font-bold text-lg h-[80px] bg-[#faedcd] mx-auto justify-between px-4 z-10 fixed bottom-0">
+                <li><a href="#"><i
+                            class="fa-solid fa-house text-[20px] text-[#222]  hover:scale-[1.2] duration-300"></i></a>
+                </li>
+                <li><a href="#"><i
+                            class="fa-solid fa-store text-[20px] text-[#222] hover:scale-[1.2] duration-300"></i></a>
+                </li>
+                <li><a href="#"><i
+                            class="fa-solid fa-briefcase text-[20px] text-[#222] hover:scale-[1.2] duration-300"></i></a>
+                </li>
+                <li><a href="#"><i
+                            class="fa-solid fa-address-card text-[20px] text-[#222] hover:scale-[1.2] duration-300"></i></a>
+                </li>
+                <li><a href="#"><i
+                            class="fa-solid fa-question text-[20px] text-[#222] hover:scale-[1.2] duration-300"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- mobile navbar ends here -->
+
+        <!-- main content starts here -->
+        <section class="md:flex hidden justify-between items-start pt-[100px] px-6">
+            <!-- swiper -->
+            <div class="basis-1/3">
+                <img src="images/img3.png" alt="">
+            </div>
+            <!-- swiper ends here -->
+
+
+            <!-- header starts -->
+            <div class="capitalize z-10  text-[#494234]">
+                <h1 class="text-7xl pb-7">sweet <br> pizzicato</h1>
+                <p class="text-md">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Vero, incidunt?</p>
+                <a href="#">
+                    <button class="px-6 py-2 text-white bg-[#494234] rounded-r-[50%] mt-6">Know More</button>
+                </a>
+            </div>
+            <!-- header ends-->
+
+
+            <!--side-content starts -->
+            <div class="px-6 pr-5 flex flex-col space-y-8">
+                <!-- list-1 -->
+                <div class="flex items-center space-x-2">
+                    <img src="images/img4.png" alt="" class="p-4 rounded-full h-[80px] w-[80px] shadow">
+                    <div class="flex flex-col">
+                        <p class="text-[18px] font-bold ">100% organic</p>
+                        <p class="text-[14px] font-bold">Lorem ipsum dolor sit amet.</pc>
+                    </div>
+                </div>
+                <!-- list 2 -->
+                <div class="flex items-center space-x-2">
+                    <img src="images/img5.png" alt="" class="p-4 rounded-full h-[80px] w-[80px] shadow">
+                    <div class="flex flex-col">
+                        <p class="text-[18px] font-bold ">100% organic</p>
+                        <p class="text-[14px] font-bold">Lorem ipsum dolor sit amet.</pc>
+                    </div>
+                </div>
+                <!-- list-3 -->
+                <div class="flex items-center space-x-2">
+                    <img src="images/img6.png" alt="" class="p-4 rounded-full h-[80px] w-[80px] shadow">
+                    <div class="flex flex-col">
+                        <p class="text-[18px] font-bold ">100% organic</p>
+                        <p class="text-[14px] font-bold">Lorem ipsum dolor sit amet.</pc>
+                    </div>
+                </div>
+
+            </div>
+            <!--side-content ends -->
+
+        </section>
+        <!-- main content ends here -->
+
+        <!-- social links -->
+        <div class="flex gap-5 justify-end px-6 social float-right relative">
+            <i class="fa-brands fa-facebook-f text-[#494234] p-4 rounded-full shadow-lg hover:translate-y-[5px]"></i>
+            <i class="fa-brands fa-instagram text-[#494234] p-4 rounded-full shadow-lg hover:translate-y-[5px]"></i>
+            <i class="fa-brands fa-twitter text-[#494234] p-4 rounded-full shadow-lg hover:translate-y-[5px]"></i>
+            <i class="fa-solid fa-envelope text-[#494234] p-4 rounded-full shadow-lg hover:translate-y-[5px]"></i>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
